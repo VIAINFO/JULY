@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ENC_ENTREGAS_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Photo_Group" RelativeSize="61.919504643962846">
+            <LayoutItem Id="Photo" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ENC_ENTREGAS">
+              <LayoutItem Id="RUT" Index="1" RelativeSize="27.642276422764226" />
+              <LayoutItem Id="RECIBE" Index="2" RelativeSize="34.959349593495936" />
+              <LayoutItem Id="ID_ENTREGA" RelativeSize="29.29936305732484" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

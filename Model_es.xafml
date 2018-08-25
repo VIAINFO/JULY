@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Plataforma">
+        <Items>
+          <Item Id="Resume_ListView" Caption="Entrega" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="ENC_ENTREGA_DetailView" Caption="Datos Entrega">
+      <Items>
+        <PropertyEditor Id="Address1" Caption="Rut" />
+        <PropertyEditor Id="Address2" Caption="Nombre" />
+        <PropertyEditor Id="Photo" Caption="Imagen" />
+      </Items>
+    </DetailView>
+    <ListView Id="ENC_ENTREGA_ListView" Caption="Lista Entrega" />
+    <ListView Id="ENC_ENTREGA_LookupListView" Caption="Entrega" />
+    <DetailView Id="ENC_ENTREGAS_DetailView">
+      <Items>
+        <PropertyEditor Id="COD_ENCOMIENDA" Caption="Codigo" />
+        <PropertyEditor Id="COMENTARIO" Caption="Comentario" />
+        <PropertyEditor Id="CONFORME" Caption="Conforme" />
+        <PropertyEditor Id="FIRMA" Caption="Firma" />
+        <PropertyEditor Id="Photo" Caption="Imagen" />
+        <PropertyEditor Id="RECIBE" Caption="Recibe" />
+        <PropertyEditor Id="RUT" Caption="Rut" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Autoc86ece1e-9887-432d-8e78-b5e41a7ef49f" Caption="Autoc86ece1e-9887-432d-8e78-b5e41a7ef49f(4)" />
+            <LayoutGroup Id="ENC_ENTREGAS">
+              <LayoutGroup Id="ENC_ENTREGAS_col2" Caption="ENC_ENTREGAS_col2" />
+              <LayoutGroup Id="ENC_ENTREGAS_col1" Caption="ENC_ENTREGAS_col1" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="COMENTARIO" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application PreferredLanguage="es">
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="DemoTask_ListView" Removed="True" />
+          <Item Id="Department_ListView" Removed="True" />
+          <Item Id="Event_ListView" Removed="True" />
+          <Item Id="MyDetails" Removed="True" />
+          <Item Id="Note" Removed="True" />
+          <Item Id="Payment_ListView" Removed="True" />
+          <Item Id="PermissionPolicyRole_ListView" Removed="True" />
+          <Item Id="PermissionPolicyUser_ListView" Removed="True" />
+          <Item Id="Position_ListView" Removed="True" />
+          <Item Id="Resume_ListView" ImageName="State_Task_Completed" ViewId="ENC_ENTREGAS_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="18.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Boolean" DefaultDisplayFormatMobile="" DefaultEditMaskMobile="" />
+      <RegisteredPropertyEditor PropertyType="System.Byte[]" DefaultDisplayFormatMobile="" DefaultEditMaskMobile="" />
+      <RegisteredPropertyEditor PropertyType="System.DateTime" DefaultDisplayFormatMobile="shortDate" DefaultEditMaskMobile="shortDate" />
+      <RegisteredPropertyEditor PropertyType="System.String" DefaultDisplayFormatMobile="" DefaultEditMaskMobile="" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="ENC_ENTREGA_DetailView" MobileVisible="True">
+      <Items>
+        <PropertyEditor Id="Photo" PropertyEditorType="DevExpress.ExpressApp.Mobile.Editors.MobileImagePropertyEditor" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="50">
+            <LayoutGroup Id="ENC_ENTREGA" RelativeSize="100">
+              <LayoutItem Id="Photo" ViewItem="Photo" Index="0" RelativeSize="79.629629629629633" IsNewNode="True" />
+              <LayoutItem Id="Address1" Index="1" RelativeSize="8.9947089947089953" />
+              <LayoutItem Id="Address2" Index="2" RelativeSize="11.375661375661375" />
+              <LayoutItem Id="Oid" RelativeSize="11.375661375661375" Index="3" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Photo_Group" Caption="Photo" RelativeSize="50">
+            <LayoutItem Id="Photo" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ENC_ENTREGA_ListView" MobileVisible="True" />
+    <DetailView Id="ENC_ENTREGAS_DetailView" MobileVisible="True">
+      <Items>
+        <PropertyEditor Id="FIRMA" PropertyEditorType="DevExpress.ExpressApp.Mobile.Editors.MobileImagePropertyEditor" />
+        <PropertyEditor Id="Photo" PropertyEditorType="DevExpress.ExpressApp.Mobile.Editors.MobileImagePropertyEditor" ImmediatePostData="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="30.115830115830114">
+            <LayoutItem Id="Photo" ViewItem="Photo" Index="0" RelativeSize="33.333333333333336" IsNewNode="True" />
+            <LayoutItem Id="CONFORME" ViewItem="CONFORME" Index="1" RelativeSize="13.675213675213675" IsNewNode="True" />
+            <LayoutGroup Id="Autoc86ece1e-9887-432d-8e78-b5e41a7ef49f" ShowCaption="False" Direction="Vertical" Index="2" RelativeSize="22.222222222222221" IsNewNode="True">
+              <LayoutItem Id="RUT" ViewItem="RUT" Index="0" RelativeSize="100" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="RECIBE" ViewItem="RECIBE" Index="3" RelativeSize="14.52991452991453" IsNewNode="True" />
+            <LayoutItem Id="COD_ENCOMIENDA" ViewItem="COD_ENCOMIENDA" Index="4" RelativeSize="16.239316239316238" IsNewNode="True" />
+            <LayoutGroup Id="ENC_ENTREGAS" RelativeSize="40.677966101694913" Index="4" Removed="True">
+              <LayoutGroup Id="ENC_ENTREGAS_col2" Index="1" RelativeSize="68.019680196801971" Direction="Horizontal">
+                <LayoutItem Id="CONFORME" RelativeSize="35.483870967741936" Removed="True" />
+                <LayoutItem Id="ESTADO" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="FECHA_RECEPCION" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ENC_ENTREGAS_col1" RelativeSize="31.980319803198032" Direction="Horizontal">
+                <LayoutItem Id="COD_ENCOMIENDA" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="RECIBE" RelativeSize="37.096774193548384" Index="0" Removed="True" />
+                <LayoutItem Id="ID_ENTREGA" RelativeSize="36.507936507936506" Removed="True" />
+                <LayoutItem Id="RUT" RelativeSize="21.25" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="60.489060489060492">
+            <LayoutItem Id="COMENTARIO" RelativeSize="100" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" Index="2" RelativeSize="9.3951093951093956" IsNewNode="True" Removed="True">
+            <LayoutGroup Id="FIRMA" ShowCaption="False" Index="0" RelativeSize="100" Direction="Vertical" IsNewNode="True">
+              <LayoutItem Id="FIRMA" ShowCaption="False" ViewItem="FIRMA" Index="0" RelativeSize="100" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ENC_ENTREGAS_ListView" MobileVisible="True" />
+    <DetailView Id="Event_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Event">
+              <LayoutGroup Id="Event_col2">
+                <LayoutItem Id="ReminderTime" ViewItem="ReminderTime" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
